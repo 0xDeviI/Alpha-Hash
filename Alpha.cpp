@@ -209,7 +209,6 @@ int main(int argc, char *argv[])
     string input = argv[1];
     string salt = argc == 3?argv[2]:"";
     input = addSalt(input, salt);
-    _totalAsciiSum = totalAsciiSum(input);
     string hashedData = "Alpha( " + _generate_alpha(input) + " )";
     cout << hashedData << endl;
     return 0;
